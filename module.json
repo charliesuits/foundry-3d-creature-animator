@@ -1,0 +1,54 @@
+{
+  "id": "creature-animator-3d",
+  "title": "3D Creature Animator",
+  "description": "Gives imported creatures the matching animated 3D model from Digi DM's 3D Animations (and any folders you add), and plays its clips from what happens at the table: attacks and spells when they're used, a flinch when hurt, the death clip at 0 HP. No midi-qol, DAE or item macros needed.",
+  "version": "1.1.0",
+  "authors": [
+    {
+      "name": "Charlie Suits",
+      "url": "https://github.com/charliesuits"
+    }
+  ],
+  "url": "https://github.com/charliesuits/foundry-3d-creature-animator",
+  "manifest": "https://github.com/charliesuits/foundry-3d-creature-animator/releases/latest/download/module.json",
+  "download": "https://github.com/charliesuits/foundry-3d-creature-animator/releases/download/v1.1.0/module.zip",
+  "readme": "https://github.com/charliesuits/foundry-3d-creature-animator#readme",
+  "bugs": "https://github.com/charliesuits/foundry-3d-creature-animator/issues",
+  "license": "LICENSE",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "levels-3d-preview",
+        "type": "module"
+      }
+    ],
+    "recommends": [
+      {
+        "id": "3d-animations",
+        "type": "module",
+        "reason": "The animated creature models this module assigns."
+      }
+    ],
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.0.0",
+          "verified": "6.0.5"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/animator.css"
+  ],
+  "socket": true
+}
